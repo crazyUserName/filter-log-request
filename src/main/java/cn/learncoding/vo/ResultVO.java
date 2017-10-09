@@ -9,9 +9,9 @@ public class ResultVO<T> {
     private String msg;
     private T data;
 
-    private static  final ResultVO<Object> DEFAULT_SUCCESS_RESULT = new ResultVO(0, "success", null);
+    private static  final ResultVO<Object> DEFAULT_SUCCESS_RESULT = new ResultVO<Object>(0, "success", null);
 
-    private static  final ResultVO<Object> DEFAULT_ERROR_RESULT = new ResultVO(-1, "system error", null);
+    private static  final ResultVO<Object> DEFAULT_ERROR_RESULT = new ResultVO<Object>(-1, "system error", null);
 
     public ResultVO(int flag, String msg, T data) {
         this.flag = flag;
